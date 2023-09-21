@@ -179,10 +179,21 @@
 3. Establece relaciones para "productId" y "id" en "Product", y "orderId" y "id" en "Order".
 4. Importa los datos de la tabla Order. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EfZRnFANSIdOpz23b-mth7kBJWnQ8jYEBVKDCJVnnNpXFw?e=zgSa72).
 
-### Paso 11: Crear la Tabla de Facturas
+### Paso 11: Crear el enumerador para el status de la factura
+
+1. Crea el tipo "Enum_InvoiceStatus" usando el siguiente código:
+
+```sql
+CREATE TYPE "Enum_InvoiceStatus" AS ENUM (
+	'PAID',
+	'PENDING',
+	'CANCELED');
+```
+
+### Paso 12: Crear la Tabla de Facturas
 
 1. Crea una tabla llamada "Invoice".
-2. Añade las columnas "id", "date", "status", "orderId" y "customerId".
+2. Añade las columnas "id", "date", "status", "orderId" y "customerId". Ten presente que la columna "status" debe ser de tipo `Enum_InvoiceStatus`.
 3. Establece relaciones entre "orderId" y "id" en "Order", y "customerId" y "id" en "Customer".
 4. Importa los datos de la tabla Invoice. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EVlurj1RGM5Pvr7j6aGlYf0BynxlhStk31tx7Rxw2ShKgA?e=KaJ3cN).
 
