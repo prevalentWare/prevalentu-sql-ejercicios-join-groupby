@@ -107,72 +107,87 @@
 
 ### Paso 1: Crear la Tabla de Estados
 
-1. Crea una tabla llamada "Estado".
+1. Crea una tabla llamada "State".
 2. Añade una columna "id" que será única para cada estado.
-3. Agrega una columna "nombre" que almacenará el nombre de cada estado.
+3. Agrega una columna "name" que almacenará el nombre de cada estado.
+4. Importa los datos de la tabla State. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EdkLBp92fBROjzlQHAhZqegB20o85WPXZKyaZ-2cMortmQ?e=4oxcGM).
 
 ### Paso 2: Crear la Tabla de Ciudades
 
-1. Crea una tabla llamada "Ciudad".
+1. Crea una tabla llamada "City".
 2. Añade una columna "id" que será única para cada ciudad.
-3. Agrega una columna "nombre" para el nombre de la ciudad.
-4. Añade una columna "stateId" que se relacionará con la tabla "Estado".
-5. Establece una relación entre "stateId" en "Ciudad" y "id" en "Estado". Esta relación indica que cada ciudad pertenece a un estado.
+3. Agrega una columna "name" para el nombre de la ciudad.
+4. Añade una columna "stateId" que se relacionará con la tabla "State".
+5. Establece una relación entre "stateId" en "City" y "id" en "State". Esta relación indica que cada ciudad pertenece a un estado.
+6. Importa los datos de la tabla City. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/ERZYQbPToCFDnICkMdreePwBLikVQpJi-JcsetEn--veYQ?e=DI1M60).
 
 ### Paso 3: Crear la Tabla de Vendedores
 
-1. Crea una tabla llamada "Vendedor".
+1. Crea una tabla llamada "Seller".
 2. Añade una columna "id" que será única para cada vendedor.
-3. Agrega columnas para "nombre" y "email". Asegúrate de que el "email" sea único para evitar duplicados.
+3. Agrega columnas para "name" y "email". Asegúrate de que el "email" sea único para evitar duplicados.
+4. Importa los datos de la tabla Seller. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EXTC9vOzg-1EjnCNpg_FOXsBiEwv9QpvYP5Swb5u8vE3kA?e=YiSput).
 
 ### Paso 4: Crear la Tabla de Clientes
 
-1. Crea una tabla llamada "Cliente".
+1. Crea una tabla llamada "Customer".
 2. Añade una columna "id" única para cada cliente.
-3. Agrega columnas para "nombre", "email" y "dirección". Asegúrate de que el "email" sea único.
+3. Agrega columnas para "name", "email" y "address". Asegúrate de que el "email" sea único.
+4. Importa los datos de la tabla Customer. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EdvYQ6TNqWtGlowYWl_lBX4Blruhq5ZF-YBqgtGXqBXapQ?e=f1bPSr).
 
 ### Paso 5: Crear la Tabla de Proveedores
 
-1. Crea una tabla llamada "Proveedor".
+1. Crea una tabla llamada "Supplier".
 2. Añade una columna "id" única para cada proveedor.
-3. Agrega una columna "nombre".
+3. Agrega una columna "name".
+4. Importa los datos de la tabla Supplier. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/Eaqp6HPPlj5BndlzN8vcybcBR1Hju-_odW7sxom5cPUXQA?e=Smarc4).
 
 ### Paso 6: Crear la Tabla de Categorías
 
-1. Crea una tabla llamada "Categoría".
+1. Crea una tabla llamada "Category".
 2. Añade una columna "id" única para cada categoría.
-3. Agrega una columna "nombre".
+3. Agrega una columna "name".
+4. Importa los datos de la tabla Category. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EYz9SqJ0CwBJi8_mDgNzY_UBw_68kRL2UV0WbJnNY6fS5A?e=DkgL1k).
 
 ### Paso 7: Crear la Tabla de Productos
 
-1. Crea una tabla llamada "Producto".
+1. Crea una tabla llamada "Product".
 2. Añade una columna "id" única.
-3. Agrega columnas para "nombre" y "precio".
-4. Añade una columna "supplierId" que se relacionará con la tabla "Proveedor".
-5. Establece una relación entre "supplierId" en "Producto" y "id" en "Proveedor".
+3. Agrega columnas para "name" y "price".
+4. Añade una columna "supplierId" que se relacionará con la tabla "Supplier".
+5. Establece una relación entre "supplierId" en "Product" y "id" en "Supplier".
+6. Importa los datos de la tabla Category. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EYz9SqJ0CwBJi8_mDgNzY_UBw_68kRL2UV0WbJnNY6fS5A?e=bGpZ1Z).
 
 ### Paso 8: Crear la Tabla Relacional Producto-Categoría
 
-1. Crea una tabla llamada "ProductoCategoría".
+1. Crea una tabla llamada "ProductCategory".
 2. Añade dos columnas: "productId" y "categoryId".
-3. Establece relaciones para ambas columnas: "productId" se relaciona con "id" en "Producto" y "categoryId" se relaciona con "id" en "Categoría".
+3. Establece relaciones para ambas columnas: "productId" se relaciona con "id" en "Product" y "categoryId" se relaciona con "id" en "Category".
+4. Importa los datos de la tabla Category. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EefoiM2GEb1EjM3TOEBe8s4B8aBO4fMsX66Fm-0iLAelrA?e=k8Qkrg).
 
 ### Paso 9: Crear la Tabla de Órdenes
 
-1. Crea una tabla llamada "Orden".
+1. Crea una tabla llamada "Order".
 2. Añade las columnas "id", "sellerId", "cityId", "invoiceId" y "date".
-3. Establece relaciones entre "sellerId" y "id" en "Vendedor", "cityId" y "id" en "Ciudad".
+3. Establece relaciones entre "sellerId" y "id" en "Seller", "cityId" y "id" en "City".
+4. Importa los datos de la tabla Order. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EVx6iXDOpaRBryMQ962ZZK8B7VFwyr-1MlbpppbMU1rP8g?e=uZI4LQ).
 
 ### Paso 10: Crear la Tabla Relacional Producto-Orden
 
-1. Crea una tabla llamada "ProductoOrden".
-2. Añade columnas para "productId", "orderId", "cantidad" y "precio".
-3. Establece relaciones para "productId" y "id" en "Producto", y "orderId" y "id" en "Orden".
+1. Crea una tabla llamada "ProductOrder".
+2. Añade columnas para "productId", "orderId", "quantity" y "price".
+3. Establece relaciones para "productId" y "id" en "Product", y "orderId" y "id" en "Order".
+4. Importa los datos de la tabla Order. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EfZRnFANSIdOpz23b-mth7kBJWnQ8jYEBVKDCJVnnNpXFw?e=zgSa72).
 
 ### Paso 11: Crear la Tabla de Facturas
 
-1. Crea una tabla llamada "Factura".
+1. Crea una tabla llamada "Invoice".
 2. Añade las columnas "id", "date", "status", "orderId" y "customerId".
-3. Establece relaciones entre "orderId" y "id" en "Orden", y "customerId" y "id" en "Cliente".
+3. Establece relaciones entre "orderId" y "id" en "Order", y "customerId" y "id" en "Customer".
+4. Importa los datos de la tabla Invoice. Puedes encontrar el link a los datos [aquí](https://prevalentware.sharepoint.com/:x:/s/PrevalentWareUniversity/EVlurj1RGM5Pvr7j6aGlYf0BynxlhStk31tx7Rxw2ShKgA?e=KaJ3cN).
+
+### Bonus!
+
+Encuentra en este mismo repositorio el código DDL de creación de la base de datos por si tienes alguna duda!
 
 </details>
