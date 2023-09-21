@@ -188,6 +188,65 @@
 
 ### Bonus!
 
-Encuentra en este mismo repositorio el código DDL de creación de la base de datos por si tienes alguna duda!
+Encuentra en este mismo repositorio el código [DDL](https://github.com/prevalentWare/prevalentu-sql-ejercicios-join-groupby/blob/main/ddl.sql) de creación de la base de datos por si tienes alguna duda!
+
+</details>
+
+---
+
+<details>
+  <summary>Ejercicios</summary>
+# Ejercicios:
+
+1. **Selección Básica**
+
+- Listar todos los nombres de productos cuyo precio sea mayor que 100. Prueba tu resultado con productos que realmente cumplan este criterio.
+- Mostrar todas las ordenes creadas en 2023.
+- Mostrar todas las facturas pendientes.
+
+2. **Joins**
+
+   - Listar los nombres de los productos junto con el nombre de su proveedor.
+   - Mostrar el nombre del cliente y el nombre del vendedor para el pedido con ID "\_\_\_\_".
+   - Listar todos los productos que pertenecen a la categoría "\_\_\_\_".
+   - Obtener el nombre y precio de todos los productos vendidos en el pedido con ID "\_\_\_\_".
+
+3. **Joins con Filtrado**
+
+   - Listar los nombres de todos los clientes que han hecho un pedido con el vendedor "\_\_\_\_".
+   - Mostrar todos los productos que NO han sido ordenados por ningún cliente.
+   - Listar las ciudades que tienen al menos 5 pedidos realizados.
+   - Listar los clientes que tienen facturas pendientes.
+   - Listar los vendedores con facturas canceladas.
+   - Mostrar todos los vendedores y el número de pedidos que han manejado, incluyendo aquellos que no han manejado ningún pedido.
+   - Listar todos los productos y las categorías a las que pertenecen, incluyendo aquellos productos que no tienen categorías asignadas.
+
+4. **Group By y Funciones Agregadas**
+
+   - Encontrar el precio promedio, máximo y mínimo de todos los productos.
+   - Listar cada categoría y el número de productos que tiene.
+   - Mostrar cada proveedor y el valor total de productos que ha suministrado (precio x cantidad para cada producto).
+   - Identificar los 5 clientes que han hecho más pedidos.
+   - Mostrar cada ciudad y el número total de pedidos realizados en ellas.
+
+5. **Consultas Combinadas**
+
+   - Para el pedido con ID "\_\_\_\_", mostrar el nombre del cliente, el nombre del vendedor, la ciudad y el total del pedido.
+   - Listar los productos que han sido ordenados más de 50 veces en total.
+   - Mostrar cada vendedor y su venta total en términos de cantidad de productos vendidos.
+
+6. **Desafíos Adicionales**
+   - Listar los 3 productos más populares en términos de cantidad total vendida.
+   - Identificar a los clientes que han gastado más de 1000 en total en sus pedidos.
+   - Mostrar las ciudades que han generado más ingresos para la tienda.
+   - Listar los 3 proveedores que más venden en cada estado.
+   - Encontrar el cliente que ha realizado el pedido más grande en términos de valor total.
+   - Mostrar la categoría de productos más amplia, es decir, la que tiene la mayor cantidad de productos diferentes.
+   - Mostrar la categoría de productos más vendida en términos de cantidad.
+   - Identificar a los vendedores que han hecho ventas en al menos 3 ciudades diferentes.
+   - Mostrar la cantidad de veces que un producto ha estado involucrado en una factura cancelada.
+   - Determinar el top 10 de clientes con mayor deuda (verificando que la factura esté pendiente).
+   - Mostrar los 5 proveedores cuyos productos tienen el precio de venta promedio más alto.
+   - Identificar a los clientes que han comprado al menos 10 productos diferentes.
 
 </details>
